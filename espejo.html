@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Diseño Dividido</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #left-side {
+            flex: 1;
+            background-color: #0071bc;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #right-side {
+            flex: 1;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Alinea los elementos verticalmente */
+        }
+
+        #left-side img {
+            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+            height: auto; /* Mantiene la proporción original de la imagen */
+        }
+
+        #right-side img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Espacio entre la imagen y el botón */
+        }
+
+        #button {
+            padding: 15px 30px;
+            background-color: #0071bc;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="left-side">
+            <!-- Contenido izquierdo, imagen -->
+            <img src="tu_otra_imagen.jpg" alt="Otra Imagen">
+        </div>
+        <div id="right-side">
+            <!-- Contenido derecho, imagen y botón -->
+            <img src="tu_imagen.jpg" alt="Imagen">
+            <a id="button" href="www.google.com">Ingrese en línea</a>
+        </div>
+    </div>
+
+</body>
+</html>
